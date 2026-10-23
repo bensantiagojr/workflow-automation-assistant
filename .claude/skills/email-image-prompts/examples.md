@@ -1,5 +1,7 @@
 # Examples (original prompts these templates were built from)
 
+These are the originals. They predate the clarification that the "graphic showing ..." line is a couple of elements pulled from the email, and that every image is clean, not busy, and has no logos. The templates in `SKILL.md` now add those lines.
+
 ## Pointillism header icon (IC26 session sign-ups)
 
 ```
