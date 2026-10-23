@@ -69,6 +69,23 @@ Show, in this order:
 
 Do not add commentary inside the code blocks. The blocks are pasted as is.
 
+## Step 6: Resize the finished images (when the user brings them back)
+After ChatGPT produces the images, the user may hand them over to be sized for the email. Specs:
+
+| Image | Size | File size | Format |
+|---|---|---|---|
+| Header icon | **800 x 800 px** | **under 200 KB** | PNG, transparency kept |
+| Banner | **max width 1200 px**, aspect ratio kept (a 3:1 banner becomes 1200 x 400) | **under 200 KB** | PNG, or JPEG only if PNG cannot fit |
+
+Run the bundled script rather than resizing by hand:
+
+```
+python3 -I .claude/skills/email-image-prompts/scripts/resize_email_images.py icon   <input> <output.png>
+python3 -I .claude/skills/email-image-prompts/scripts/resize_email_images.py banner <input> <output.png>
+```
+
+It resizes with LANCZOS, tries a plain PNG, then reduces the palette (256, 192, 128, ... colours) until the file is under 200 KB, and only falls back to JPEG for a banner. It prints the final size, KB and method. Report those back, and view the icon on a dark background to confirm the transparency survived. Name outputs `<email-slug>-icon-800.png` and `<email-slug>-banner-1200.png`.
+
 ## Prompt templates
 Fill the `{...}` fields. Everything else is verbatim, and the wording is deliberate. "I love this style a lot can you make one again" relies on the style already established in that ChatGPT thread.
 
