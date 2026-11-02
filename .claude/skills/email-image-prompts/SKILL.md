@@ -95,7 +95,10 @@ Run the bundled script rather than resizing by hand. The path is relative to thi
 ```
 python3 -I <skill folder>/scripts/resize_email_images.py icon   <input> <output.png>
 python3 -I <skill folder>/scripts/resize_email_images.py banner <input> <output.png>
+python3 -I <skill folder>/scripts/resize_email_images.py square <input> <output>
 ```
+
+Use `square` for any other square image the user wants at 800x800 and under 200 KB (headshots, announcement graphics). It keeps a lossless PNG when that fits or the image has transparency, and otherwise picks a JPEG at the highest quality that fits. Non-square input is centre-cropped. Use `icon` (not `square`) for the pointillism header icon.
 
 It needs the Pillow library. If `import PIL` fails, install it with `pip install pillow` and run again.
 
