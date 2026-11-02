@@ -23,7 +23,7 @@ import sys
 
 from PIL import Image
 
-LIMIT = 200 * 1024
+LIMIT = 200 * 1000  # strict: under 200 KB whether KB is counted as 1000 or 1024 bytes
 ICON_SIZE = 800
 BANNER_MAX_W = 1200
 
