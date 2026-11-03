@@ -88,7 +88,7 @@ Specs:
 | Image | Size | File size | Format |
 |---|---|---|---|
 | Header icon | **800 x 800 px** | **under 200 KB** | PNG, transparency kept |
-| Banner | **max width 1200 px**, aspect ratio kept (a 3:1 banner becomes 1200 x 400) | **under 200 KB** | PNG, or JPEG only if PNG cannot fit |
+| Banner | **max width 1200 px**, aspect ratio kept (a 3:1 banner becomes 1200 x 400) | **under 200 KB** | JPEG (quality 95 down) when a lossless PNG does not fit; this keeps soft gradients smooth |
 
 Run the bundled script rather than resizing by hand. The path is relative to this skill's folder, wherever it is installed:
 
@@ -102,7 +102,7 @@ Use `square` for any other square image the user wants at 800x800 and under 200 
 
 It needs the Pillow library. If `import PIL` fails, install it with `pip install pillow` and run again.
 
-It resizes with LANCZOS, tries a plain PNG, then reduces the palette (256, 192, 128, ... colours) until the file is under 200 KB, and only falls back to JPEG for a banner. It prints the final size, KB and method. Report those back, and view the icon on a dark background to confirm the transparency survived. Name outputs `<email-slug>-icon-800.png` and `<email-slug>-banner-1200.png`.
+It resizes with LANCZOS and tries a lossless PNG first. For an image with transparency (the icon) it then reduces colour depth and the soft-shadow alpha step by step, keeping full colour so there is no banding, and only uses a 256-colour palette as a last resort. For an opaque image (banner, photos) it tries a high-quality JPEG next. A palette PNG is the last resort in both cases because it can band on soft gradients. It prints the final size, KB and method. Report those back, and view the icon on a dark background to confirm the transparency survived. Name outputs `<email-slug>-icon-800.png` and `<email-slug>-banner-1200.png`.
 
 ## Prompt templates
 Fill the `{...}` fields. Everything else is verbatim, and the wording is deliberate. "I love this style a lot can you make one again" relies on the style already established in that ChatGPT thread.
