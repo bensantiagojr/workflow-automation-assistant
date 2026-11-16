@@ -28,7 +28,7 @@ Read, in this order: `CLAUDE.md`, `references/playbook.md`, the brand voice file
 - Tag the post with a test id from the playbook if it belongs to one.
 
 ## Step 4: Write slide copy
-For each slide: headline (max 8 words), support line (max 20 words), claim id. Write in the brand voice, then run the slop checklist and fix failures.
+For each slide: headline (max 8 words, a customer quote slide may run to 15 and must be a verbatim piece of the quote), support line (max 20 words), claim id. Write in the brand voice, then run the slop checklist and fix failures.
 
 ## Step 5: Illustration prompts
 - One illustration per slide that needs one, many slides can be type only.
