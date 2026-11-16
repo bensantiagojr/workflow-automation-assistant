@@ -1,0 +1,79 @@
+[
+  {
+    "id": "01-cover",
+    "file": "rental-intelligence-data-misleads-art-01-cover.png",
+    "tool": "ChatGPT, pointillism thread (model not recorded)",
+    "prompt": "Same style as the laptop image: dense dots, soft rounded 3D volume, bold brand greens. All I want is pretty much a graphic showing a bar chart that looks complete and tidy, with a few loose dots drifting away from one of the bars, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting. 16:9 is the aspect ratio, png transparent background. No words or numbers needed. No logos.",
+    "round": 2,
+    "references": [
+      "07-cta (style anchor)"
+    ],
+    "size": "1672x941",
+    "background": "transparent",
+    "received_at": "2026-11-16",
+    "ai_generated": true,
+    "status": "approved"
+  },
+  {
+    "id": "02-weak-asset",
+    "file": "rental-intelligence-data-misleads-art-02-weak-asset.png",
+    "tool": "ChatGPT, pointillism thread (model not recorded)",
+    "prompt": "Same style as the laptop image: dense dots, soft rounded 3D volume, bold brand greens. All I want is pretty much a graphic showing a compact tracked loader next to a small line chart sloping downward, with a soft glow around the loader, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting. 16:9 is the aspect ratio, png transparent background. No words or numbers needed. No logos.",
+    "round": 2,
+    "references": [
+      "07-cta (style anchor)"
+    ],
+    "size": "1672x941",
+    "background": "transparent",
+    "received_at": "2026-11-16",
+    "ai_generated": true,
+    "status": "approved"
+  },
+  {
+    "id": "03-hidden-costs",
+    "file": "rental-intelligence-data-misleads-art-03-hidden-costs.png",
+    "tool": "ChatGPT, pointillism thread (model not recorded)",
+    "prompt": "Same style as the laptop image: dense dots, soft rounded 3D volume, bold brand greens. All I want is pretty much a graphic showing a wrench almost completely hidden behind a tall, neat stacked bar, with only the wrench head peeking out above it, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting. 16:9 is the aspect ratio, png transparent background. No words or numbers needed. No logos.",
+    "round": 2,
+    "references": [
+      "07-cta (style anchor)"
+    ],
+    "size": "1672x941",
+    "background": "transparent",
+    "received_at": "2026-11-16",
+    "ai_generated": true,
+    "status": "approved, tight top margin"
+  },
+  {
+    "id": "04-same-data",
+    "file": "rental-intelligence-data-misleads-art-04-same-data.png",
+    "tool": "ChatGPT, pointillism thread (model not recorded)",
+    "prompt": "I love this style a lot can you make one again different focus. All I want is pretty much a graphic showing scattered dots on one side flowing into an orderly arrow and a few clean checklist cards on the other, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting, and keep the style so the look really comes through. 1:1 is the aspect ratio, png transparent background. No words or numbers needed. No logos.",
+    "round": 1,
+    "references": [],
+    "size": "1774x887",
+    "background": "transparent",
+    "received_at": "2026-11-16",
+    "ai_generated": true,
+    "status": "approved"
+  },
+  {
+    "id": "07-cta",
+    "file": "rental-intelligence-data-misleads-art-07-cta.png",
+    "tool": "ChatGPT, pointillism thread (model not recorded)",
+    "prompt": "I love this style a lot can you make one again different focus. All I want is pretty much a graphic showing a laptop showing a dashboard made of simple dot shapes, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting, and keep the style so the look really comes through. 1:1 is the aspect ratio, png transparent background. No words or numbers needed. No logos.",
+    "round": 1,
+    "references": [],
+    "size": "1672x941",
+    "background": "transparent",
+    "received_at": "2026-11-16",
+    "ai_generated": true,
+    "status": "approved"
+  },
+  {
+    "id": "05-how-it-works",
+    "file": null,
+    "status": "pending: file not received (seen inline only)",
+    "ai_generated": true
+  }
+]
