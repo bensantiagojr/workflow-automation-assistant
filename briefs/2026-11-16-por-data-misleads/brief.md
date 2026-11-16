@@ -67,19 +67,41 @@ I love this style a lot can you make one again different focus. All I want is pr
 
 Generate all six, then send them back. I will name them, record them in `art/manifest.json` as AI-generated (tool: ChatGPT, thread: pointillism) and check them against the slop checklist. Illustration only: no real equipment photos, people or invented app screens.
 
+### Review round 1 (2026-11-16)
+Received 01 to 05 and 07 (05 was only seen as an inline image, so its transparency is unchecked). All have true transparent backgrounds, so no white boxes on the off-white layout, and none has text, numbers or logos. Fixes needed:
+- **Two styles in one carousel.** 03, 04, 05 and 07 are bold: dense dots, soft 3D volume. 01 and 02 are light and airy, and 01 is faint (about 12% coverage, semi-transparent), so the hook slide would wash out on a phone. Re-roll 01 and 02 in the bold style.
+- **03 does not show the idea.** The wrench is fully visible and the bars rise, so it reads as growth, not as repair costs hiding. Re-roll with the wrench mostly hidden.
+- **Aspect ratios.** 03, 04, 05 and 07 came back 16:9 or 2:1, not 1:1, so the layout spec now places art as a strip and the re-rolls ask for 16:9.
+
+Re-roll prompts (paste into the pointillism thread and attach the laptop image, 07, as the style anchor):
+```
+Same style as the laptop image: dense dots, soft rounded 3D volume, bold brand greens. All I want is pretty much a graphic showing a bar chart that looks complete and tidy, with a few loose dots drifting away from one of the bars, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting. 16:9 is the aspect ratio, png transparent background. No words or numbers needed. No logos.
+```
+(01-cover)
+```
+Same style as the laptop image: dense dots, soft rounded 3D volume, bold brand greens. All I want is pretty much a graphic showing a compact tracked loader next to a small line chart sloping downward, with a soft glow around the loader, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting. 16:9 is the aspect ratio, png transparent background. No words or numbers needed. No logos.
+```
+(02-weak-asset)
+```
+Same style as the laptop image: dense dots, soft rounded 3D volume, bold brand greens. All I want is pretty much a graphic showing a wrench almost completely hidden behind a tall, neat stacked bar, with only the wrench head peeking out above it, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting. 16:9 is the aspect ratio, png transparent background. No words or numbers needed. No logos.
+```
+(03-hidden-costs)
+
+After the re-rolls I will convert the six to PNG, name them `rental-intelligence-data-misleads-art-<id>.png` and record them in `art/manifest.json`.
+
 ## Layout spec (Claude Design)
 ```
-Canvas: 1080 x 1350 px (4:5), 7 slides. Use the Point of Rental Rebrand 2026 design system. Light off-white background, dark text, brand green as the highlight. The generated pointillism art has a transparent background and sits on the light background.
+Canvas: 1080 x 1350 px (4:5), 7 slides. The generated art is 16:9 or 2:1 with a transparent background: place it as a strip at the full content width (936 px), keep the area above it clear for type, and never stretch or crop the dots. Use the Point of Rental Rebrand 2026 design system. Light off-white background, dark text, brand green as the highlight. The generated pointillism art has a transparent background and sits on the light background.
 
 Every slide: "Rental Intelligence Suite" lockup top left, 7-segment page indicator top right (current slide filled). Margins 72 px. Type: headline at least 64 px bold, support text at least 30 px, nothing under 24 px. "SWIPE →" cue bottom right on slides 1 to 6, none on slide 7. Highlight the key phrase of each headline with the brand green underline.
 
-1 Cover: headline top (max 3 lines), support line under it, art 01-cover in the lower half, bleeding to the right edge.
-2 Headline top, support line, art 02-weak-asset lower right.
-3 Headline top, support line, art 03-hidden-costs lower left.
-4 Headline top, support line, art 04-same-data across the lower third.
-5 How it works: headline "How it works", two stacked cards. Card 1: "Ask in plain language" with the line  "show my highest ROI items". Card 2: "Nightly AI Insights" with "Your fleet is reviewed every night." Art 05-how-it-works small, lower right, or a real product screenshot if cleared.
+1 Cover: headline top (max 3 lines), support line under it, art 01-cover as a strip in the lower 40%.
+2 Headline top, support line, art 02-weak-asset as a strip in the lower 40%.
+3 Headline top, support line, art 03-hidden-costs as a strip in the lower 40%.
+4 Headline top, support line, art 04-same-data as a strip in the lower 40%.
+5 How it works: headline "How it works", two stacked cards. Card 1: "Ask in plain language" with the line  "show my highest ROI items". Card 2: "Nightly AI Insights" with "Your fleet is reviewed every night." Art 05-how-it-works as a strip at the bottom, or a real product screenshot if cleared.
 6 Quote: the quote is the headline, large, left aligned with a green quotation mark. Support line below it. No art. Optionally a small dot motif in a corner.
-7 Closing: headline "See it in action." Support line, then the URL point-of-rental.com/rental-intelligence as plain text (no button graphic). Art 07-cta lower right.
+7 Closing: headline "See it in action." Support line, then the URL point-of-rental.com/rental-intelligence as plain text (no button graphic). Art 07-cta as a strip in the lower 40%.
 
 Export: PNG per slide named rental-intelligence-data-misleads-01.png to -07.png, plus one PDF with all 7 slides in order for LinkedIn. X gets slides 1, 2, 5 and 6 only.
 ```
