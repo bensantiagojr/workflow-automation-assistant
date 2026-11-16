@@ -58,6 +58,19 @@
     "status": "approved"
   },
   {
+    "id": "05-how-it-works",
+    "file": "rental-intelligence-data-misleads-art-05-how-it-works.png",
+    "tool": "ChatGPT, pointillism thread (model not recorded)",
+    "prompt": "I love this style a lot can you make one again different focus. All I want is pretty much a graphic showing a speech bubble and a crescent moon with a few stars, floating over a small loader, maybe floating UI elements and nice movement in the graphic. Keep it clean and simple, not too busy or distracting, and keep the style so the look really comes through. 1:1 is the aspect ratio, png transparent background. No words or numbers needed. No logos.",
+    "round": 1,
+    "references": [],
+    "size": "1774x887",
+    "background": "transparent",
+    "received_at": "2026-11-16",
+    "ai_generated": true,
+    "status": "approved, art sits in the right 60% of the frame"
+  },
+  {
     "id": "07-cta",
     "file": "rental-intelligence-data-misleads-art-07-cta.png",
     "tool": "ChatGPT, pointillism thread (model not recorded)",
@@ -69,11 +82,5 @@
     "received_at": "2026-11-16",
     "ai_generated": true,
     "status": "approved"
-  },
-  {
-    "id": "05-how-it-works",
-    "file": null,
-    "status": "pending: file not received (seen inline only)",
-    "ai_generated": true
   }
 ]
